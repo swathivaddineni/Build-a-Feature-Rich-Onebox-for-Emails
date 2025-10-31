@@ -1,4 +1,6 @@
 **Build a Feature-Rich Onebox for Emails**
+---
+
 Assignment - Build a Feature-Rich Onebox for Emails
 
 ---
@@ -170,6 +172,11 @@ Some issue you can tackle:-
 > Gmail IMAP login failed? Make sure you use an App password.
 > Have ElasticSearch Error take a look and check docker is running on port 9200.
 > for categorisation issue check you API key and declaration of Key.
+
+**link**
+
+<img width="1056" height="532" alt="Screenshot 2025-10-31 084456" src="https://github.com/user-attachments/assets/066abaad-c774-4783-8068-6ec3f433536d" />
+
 
 ## Credits:
 --Some Part of this Codebase is assisted by Chatgpt for some structure of tackling errors.
