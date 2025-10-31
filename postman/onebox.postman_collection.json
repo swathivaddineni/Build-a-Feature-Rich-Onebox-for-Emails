@@ -1,0 +1,51 @@
+{
+  "info": {
+    "name": "OneBox_Assignment_Postman",
+    "_postman_id": "onebox-swathi",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": { "raw": "http://localhost:4000/api/health", "protocol": "http", "host": ["localhost"], "port": "4000", "path": ["api", "health"] }
+      }
+    },
+    {
+      "name": "Search Emails",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": { "raw": "http://localhost:4000/api/emails?q=interview", "protocol": "http", "host": ["localhost"], "port": "4000", "path": ["api","emails"], "query": [{ "key": "q", "value": "interview" }] }
+      }
+    },
+    {
+      "name": "Get Email by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": { "raw": "http://localhost:4000/api/emails/{{EMAIL_ID}}", "protocol": "http", "host": ["localhost"], "port": "4000", "path": ["api","emails","{{EMAIL_ID}}"] }
+      }
+    },
+    {
+      "name": "Label Email",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{ \"label\": \"Interested\" }" },
+        "url": { "raw": "http://localhost:4000/api/emails/{{EMAIL_ID}}/label", "protocol": "http", "host": ["localhost"], "port": "4000", "path": ["api","emails","{{EMAIL_ID}}","label"] }
+      }
+    },
+    {
+      "name": "RAG Suggest",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{ \"emailId\": \"{{EMAIL_ID}}\" }" },
+        "url": { "raw": "http://localhost:4000/api/rag/suggest", "protocol": "http", "host": ["localhost"], "port": "4000", "path": ["api","rag","suggest"] }
+      }
+    }
+  ]
+}
